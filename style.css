@@ -101,6 +101,9 @@ a {
     outline: none;
     font-weight: bold;
 }
+.botao-destaque:hover {
+    cursor: pointer;
+}
 /*Fim da estilização em destaque*/
 
 /*Estilização dos filmes*/
@@ -131,6 +134,7 @@ a {
 .filme-lista-item:hover .filme-lista-item-descricao,
 .filme-lista-item:hover .movie-list-item-button {
     opacity: 1;
+    
 
 }
 .filme-lista-item-img {
@@ -175,9 +179,6 @@ a {
     left: 50px;
     opacity: 0;
     transition: 1s all ease-in-out;
-}
-.botao-destaque:hover {
-    cursor: pointer;
 }
 .arrow {
     font-size: 120px;
