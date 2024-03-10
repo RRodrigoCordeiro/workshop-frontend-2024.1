@@ -1,0 +1,197 @@
+/*Estilização Global*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/*Fim da estilização Global*/
+body {
+    font-family: "Roboto", sans-serif;
+}
+/*Estilização do cabeçalho*/
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+.logo-container {
+    flex: 1;
+}
+.img-logo {
+    font-size: 30px;
+    color: #4dbf00;
+    height: 30px;
+}
+.menu-container {
+    flex: 6;
+
+}
+.menu-lista {
+    display: flex;
+    list-style: none;
+}
+a {
+    color: aliceblue;
+}
+.menu-list-item {
+    margin-right: 30px;
+}
+.perfil-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.perfil-texto-container {
+    margin: 0 20px;
+}
+.foto-perfil {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pesquisa {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+/*Fim da estilização do cabeçalho*/
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+/*Estilização em destaques*/
+.conteudo-destaque {
+    height: 50vh;
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('img/suits_fundo.webp') fixed;
+}
+.foto-destaque {
+    width: 200px;
+    opacity: 0.8;
+}
+.descricao-destaque {
+    width: 500px;
+    color: lightgray;
+    margin: 30px 0;
+    text-align: justify;
+}
+.botao-destaque {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+/*Fim da estilização em destaque*/
+
+/*Estilização dos filmes*/
+.filmes-lista-container {
+    padding: 0 20px;
+}
+.filme-lista-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.filme-lista {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+.filme-lista-item {
+    margin-right: 30px;
+    position: relative;
+}
+.filme-lista-item:hover .filme-lista-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+.filme-lista-item:hover .filme-lista-item-titulo,
+.filme-lista-item:hover .filme-lista-item-descricao,
+.filme-lista-item:hover .movie-list-item-button {
+    opacity: 1;
+
+}
+.filme-lista-item-img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.filme-lista-item-titulo {
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.filme-lista-item-descricao {
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    text-align: justify;
+}
+/*Fim da estilização dos filmes*/
+.movie-list-item-button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.botao-destaque:hover {
+    cursor: pointer;
+}
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+}
+/*responsividade*/
+@media only screen and (max-width: 940px) {
+    .menu-container {
+        display: none;
+    }
+}
+/*fim da responsividade*/
